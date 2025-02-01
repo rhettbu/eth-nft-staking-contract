@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT LICENSE
 
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/access/Ownership.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
 pragma solidity ^0.8.4;
 
-contract Collection is ERC721Enumerable, Ownable {
+contract Collection is ERC721Enumerable, Ownership {
 
     
     using Strings for uint256;
