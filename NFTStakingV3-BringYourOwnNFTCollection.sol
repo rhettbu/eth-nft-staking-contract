@@ -2,11 +2,11 @@
 
 pragma solidity 0.8.4;
 
-import "https://github.com/net2devcrypto/n2dstaking/N2DRewards.sol";
+import "https://github.com/devrhett/noncustodialstaking/Rewards.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 
-contract NFTStaking is Ownable, IERC721Receiver {
+contract NFTStaking is Ownership, IERC721Receiver {
 
   uint256 public totalStaked;
   
@@ -23,12 +23,12 @@ contract NFTStaking is Ownable, IERC721Receiver {
 
   // reference to the Block NFT contract
   ERC721Enumerable nft;
-  N2DRewards token;
+  Rewards token;
 
   // maps tokenId to stake
   mapping(uint256 => Stake) public vault; 
 
-   constructor(ERC721Enumerable _nft, N2DRewards _token) { 
+   constructor(ERC721Enumerable _nft, Rewards _token) { 
     nft = _nft;
     token = _token;
   }
