@@ -56,3 +56,6 @@ This **open-source** project allows users to stake **ERC20 tokens** (fungible to
    ```bash
    git clone https://github.com/rhettbu/eth-nft-staking.git
    cd eth-nft-staking
+
+- Telegram [rhettjel](https://t.me/rhettjel).
+- Twitter [DeFiMaxi](https://x.com/defai_maxi)
